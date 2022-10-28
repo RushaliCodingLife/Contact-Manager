@@ -1,0 +1,108 @@
+body{
+    font-family: "Trirong", sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#total {
+  background-color:   rgb(234, 154, 154);
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+    padding: 10px;
+    width: 180px;
+    height: 40px;
+  }
+
+
+.img-logo{
+    height: 10px;
+    max-width: 50px;
+}   
+.form-container{
+    background-color: white;
+    border-radius: 10px;
+    opacity: 0.5;
+    margin-top: 160px;
+}
+
+.offcanvas-title
+{ font-family: "Lobster", Sans-serif;
+font-size:50px;
+margin-left: 50px;
+color:#529cdb;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color:#529cdb;
+    color: white;
+  }
+  
+  /* Style the container for inputs */
+  .container1 {
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  /* The message box is shown when the user clicks on the password field */
+  #message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+  .btn-row{
+    width: 150px;
+    height: 50px;
+  }
+
+  .btn-row1{
+    width: 140px;
+    height: 50px;
+  }
+
+  

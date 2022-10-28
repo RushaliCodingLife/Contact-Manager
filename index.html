@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-image:url(image/11.jpg)">
+  <!-- font family -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=shadow-multiple">
+
+
+  <!-- form -->
+
+  <div class="row">
+    <div class="col-xl-4"></div>
+    <div class="col-xl-4 mt-5">
+
+      <div class="form-container container-xl conatiner-lg container-md conatiner-sm container-xs border border-light">
+        <span class="img-logo"><img src="image/13.webp" class="text-center ms-5 mt-5" width="500px"
+            height="100px"></span>
+        <div class="container col-10 my-5">
+          <div class="input-group mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+              <label for="floatingInputGroup1">Username</label>
+            </div>
+          </div>
+          <div class="input-group mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+              <label for="floatingInputGroup1">password</label>
+
+
+              <div class="row">
+                <div class="col-4">
+                  <a href="dashboard.html"> <button type="button" class="btn-row btn btn-outline-primary mt-5 ">SignIn</button></a>
+                </div>
+                <div class="col-4"></div>
+                <div class="col-4 ">
+                  <button type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                    aria-controls="staticBackdrop" class="btn-row btn btn-outline-primary mt-5">SignUp</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4"></div>
+  </div>
+
+
+
+  <!--offcanvas , sign up page  -->
+
+  <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+    aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header text-center ms-5   ">
+      <h5 class="offcanvas-title " id="staticBackdropLabel">Sign Up</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="container1">
+        <form action="/action_page.php">
+          <label for="usrname">Username</label>
+          <input type="text" id="usrname" name="usrname" required>
+
+          <label for="psw">Password</label>
+          <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+            required>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <!-- password requirement-->
+
+      <div id="message">
+        <h3>Password must contain the following:</h3>
+        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+        <p id="number" class="invalid">A <b>number</b></p>
+        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+      </div>
+
+
+      <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
